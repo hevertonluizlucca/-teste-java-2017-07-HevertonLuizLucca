@@ -81,8 +81,7 @@ public class CSVFileParserPresenterImpl implements FileParserPresenter {
 	@Override
 	public Long countLines() throws IOException {
 		return Files.lines(Paths.get(file.getPath())).skip(1).count();
-	}
-	//TODO teste
+	}	
 
 	private void closeProgram() {
 		this.view.show("Programa finalizado, obrigado por utilizar!");
